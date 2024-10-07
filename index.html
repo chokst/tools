@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Investment Tools</h1>
+    </header>
+    
+    <main>
+        <section id="risk-management">
+            <h2>Risk Management Calculator</h2>
+            <input type="number" id="totalInvestment" placeholder="Total Investment Amount" />
+            <input type="number" id="riskPercentage" placeholder="Risk Percentage (%)" />
+            <button onclick="calculateRisk()">Calculate</button>
+            <p id="riskOutput"></p>
+        </section>
+        
+        <section id="sip-calculator">
+            <h2>SIP Calculator</h2>
+            <input type="number" id="sipAmount" placeholder="Monthly Investment Amount" />
+            <input type="number" id="sipRate" placeholder="Expected Annual Return Rate (%)" />
+            <input type="number" id="sipDuration" placeholder="Investment Duration (years)" />
+            <button onclick="calculateSIP()">Calculate</button>
+            <p id="sipOutput"></p>
+        </section>
+        
+        <section id="swp-calculator">
+            <h2>SWP Calculator</h2>
+            <input type="number" id="swpAmount" placeholder="Total Investment Amount" />
+            <input type="number" id="swpRate" placeholder="Expected Annual Return Rate (%)" />
+            <input type="number" id="swpDuration" placeholder="Withdrawal Period (years)" />
+            <input type="number" id="annualWithdrawal" placeholder="Annual Withdrawal Amount" />
+            <button onclick="calculateSWP()">Calculate</button>
+            <p id="swpOutput"></p>
+        </section>
+        
+        <section id="camarilla-calculator">
+            <h2>Camarilla Pivot Point Calculator</h2>
+            <input type="number" id="high" placeholder="Previous Day's High" />
+            <input type="number" id="low" placeholder="Previous Day's Low" />
+            <input type="number" id="close" placeholder="Previous Day's Close" />
+            <button onclick="calculateCamarilla()">Calculate</button>
+            <p id="camarillaOutput"></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Investment Tools. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
